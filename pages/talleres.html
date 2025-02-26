@@ -1,19 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Talleres sobre cría y cuidado de mariposas</h1>
-    <p>
-      ¿Alguna vez te has preguntado cómo sería cuidar una larva o una crisálida
-      de mariposa?, o quizá ¿Cómo sería ver nacer una mariposa? En esta
-      oportunidad aprenderás sobre algunas generalidades y características de
-      las mariposas, además de tener la posibilidad de cuidar un organismo de
-      tres de las especies más estudiadas en Colombia: <i>Danaus plexippus</i> o
-      Mariposa Monarca, <i>Danaus gilippus</i> o Mariposa Reina, y <i>Leptophobia aripa</i> o Mariposa blanca de la col.
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tibirita</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="section1 section-animada d-flex w-100 justify-content-center align-items-center"
+    style="position: relative;">
+    <div class="d-flex w-100 justify-content-center align-items-center">
+      <nav class="d-flex justify-content-center ps-3 pe-3">
+        <ul class="d-flex list-unstyled m-0 p-0" style="gap: 20px;">
+          <li style="color: black;"><a href="/">Home</a></li>
+          <li style="color: black;">Nosotros</li>
+          <li style="color: black;">Contacto</li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <input class="buscador" type="text" placeholder="Buscar">
+          </li>
+        </ul>
+      </nav>
+      <img class="portada" style="width: 70%;" src="../imgs/portada2.png" alt="">
+      <div class="container position-absolute w-50">
+        <h1 class="title text-center">Biodiversidad de Cundinamarca y Boyacá</h1>
+      </div>
+      <div style="position: absolute;">
+        <h1>Talleres sobre cría y cuidado de mariposas</h1>
+        <p>
+          ¿Alguna vez te has preguntado cómo sería cuidar una larva o una crisálida
+          de mariposa?, o quizá ¿Cómo sería ver nacer una mariposa? En esta
+          oportunidad aprenderás sobre algunas generalidades y características de
+          las mariposas, además de tener la posibilidad de cuidar un organismo de
+          tres de las especies más estudiadas en Colombia: <i>Danaus plexippus</i> o
+          Mariposa Monarca, <i>Danaus gilippus</i> o Mariposa Reina, y <i>Leptophobia aripa</i> o Mariposa blanca de la
+          col.
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <div class="contenedor2 section-animada position-absolute">
+      <div class="card card-1">
+        <div class="card-num">1</div>
+        <h3>Recorridos</h3>
+        <img src="../imgs/95.png" class="card-img" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur voluptatibus assumenda facere providen</p>
+        <button class="btn-card recorridos">Ver más</button>
+      </div>
+
+      <!-- <div class="card card-2">
+				<div class="card-num">2</div>
+				<h3>Talleres</h3>
+				<img src="../imgs/112.png" class="card-img" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur voluptatibus assumenda facere providen</p>
+				<button class="btn-card talleres">Ver más</button>
+			</div> -->
+
+      <div class="card card-3">
+        <div class="card-num">3</div>
+        <h3>Guías</h3>
+        <img src="../imgs/133.png" class="card-img" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur voluptatibus assumenda facere providen</p>
+        <button class="btn-card guias">Ver más</button>
+      </div>
+
+      <div class="card card-4">
+        <div class="card-num">4</div>
+        <h3>Galería</h3>
+        <img src="../imgs/90.png" class="card-img" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur voluptatibus assumenda facere providen</p>
+        <button class="btn-card galeria">Ver más</button>
+      </div>
+
+      <div class="card card-5">
+        <div class="card-num">5</div>
+        <h3>Tienda</h3>
+        <img src="../imgs/201.png" class="card-img" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur voluptatibus assumenda facere providen</p>
+        <button class="btn-card tienda">Ver más</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section2 d-none">
+    <h1>holis</h1>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Mapeo de contenido para cada tipo de botón
+      const contentMap = {
+        "recorridos": "<iframe src='./recorridos.html' width='100%'' height='500px'></iframe>",
+        // "talleres": "<iframe src='./talleres.html' width='100%'' height='500px'></iframe>",
+        "guias": "<iframe src='./guias.html' width='100%'' height='500px'></iframe>",
+        "galeria": "<iframe src='./galeria.html' width='100%'' height='500px'></iframe>",
+        "tienda": "<iframe src='./tienda.html' width='100%'' height='500px'></iframe>",
+        "default": "Pagina no encontrada.",
+      };
+
+      // Agregar evento a los botones
+      document.querySelectorAll(".btn-card").forEach(button => {
+        button.addEventListener("click", function () {
+          let classListArray = Array.from(button.classList);
+
+          if (classListArray.length < 2) {
+            console.log("No hay una segunda clase definida en el botón.");
+            return;
+          }
+
+          let secondClass = classListArray[1];
+
+          // Manejo de secciones
+          let section1 = document.querySelector(".section1");
+          let section2 = document.querySelector(".section2");
+
+          if (section1) section1.classList.add("salida");
+          setTimeout(() => {
+            if (section1) section1.classList.add("position-absolute");
+
+          });
+          setTimeout(() => {
+            if (section1) section1.classList.add("d-none");
+          }, 700);
+          if (section2) {
+            section2.classList.remove("d-none");
+            section2.classList.add("d-flex", "section-animada");
+            section1.classList.add("salida")
+            // section1.classList.add("section-animada")
+
+            // Insertar contenido dinámico
+            section2.innerHTML = contentMap[secondClass] || contentMap["default"];
+          }
+        });
+      });
+
+      // Carga de contenido dinámico según el parámetro en la URL
+      function loadDynamicContent() {
+        const params = new URLSearchParams(window.location.search);
+        const page = params.get("page");
+        const section = document.querySelector(".section2");
+
+        if (!section) return;
+
+        section.innerHTML = contentMap[page] || contentMap["default"];
+      }
+
+      // Carga el contenido si hay un parámetro en la URL
+      loadDynamicContent();
+    });
+
+
+
+  </script>
+</body>
+
 </html>
