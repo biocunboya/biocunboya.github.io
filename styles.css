@@ -134,6 +134,9 @@ nav {
 	border-radius: 10px;
 	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+ nav li {
+	margin-left: 1rem;
+ }
 
 nav:hover {
 	background-color: rgb(255, 222, 173);
@@ -191,7 +194,6 @@ nav:hover {
 }
 
 .salida {
-	background-color: coral;
 	animation: slideSalida 0.8s ease-out;
 }
 
