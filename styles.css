@@ -15,6 +15,7 @@ html {
 body {
 	width: 100vw;
 	max-width: 100%;
+	background-color: transparent;
 }
 
 iframe {
@@ -212,7 +213,8 @@ nav:hover {
 	align-items: center;
 	width: 70%;
 	padding: 1rem;
-	margin: 5rem;
+	margin-bottom: 5rem;
+	margin-top: 5rem;
 	border-radius: 20px;
 	background: #e0e0e0;
 	box-shadow: 20px 20px 60px #bebebe,
@@ -239,10 +241,18 @@ nav:hover {
 	padding-left: 1rem;
 }
 
+.card-white {
+	place-items: center;
+}
+
 @media (min-width: 320px) {
 	.contenedor2 {
 		grid-template-columns: 1fr;
 		top: 20vh;
+	}
+	.card-white {
+		grid-template-columns: 1fr;
+		place-items: center;
 	}
 
 	.title {
@@ -253,6 +263,9 @@ nav:hover {
 		/* display: flex; */
 		flex-direction: column;
 	}
+	nav {
+		width: 95%;
+	}
 
 }
 
@@ -260,6 +273,10 @@ nav:hover {
 	.contenedor2 {
 		grid-template-columns: 1fr 1fr;
 		top: 30vh;
+	}
+	.card-white {
+		grid-template-columns: 1fr 1fr;
+
 	}
 
 	.title {
@@ -273,12 +290,20 @@ nav:hover {
 	.contenedor-recorridos .card-5 {
 		width: 10rem;
 	}
+	nav {
+		width: 70%;
+	}
 }
 
 @media (min-width: 750px) {
 	.contenedor2 {
 		grid-template-columns: 1fr 1fr 1fr;
 		top: 40vh;
+	}
+
+	.card-white {
+		grid-template-columns: 1fr 1fr 1fr;
+
 	}
 
 	.title {
@@ -301,6 +326,9 @@ nav:hover {
 		width: 50%;
 
 	}
+	nav {
+		width: 60%;
+	}
 }
 
 @media (min-width: 800px) {
@@ -321,6 +349,9 @@ nav:hover {
 		outline: none;
 		padding-left: 5px;
 	}
+	nav {
+		width: 65%;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -328,5 +359,8 @@ nav:hover {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		top: 70vh;
 		max-width: 1200px;
+	}
+	nav {
+		width: 40%;
 	}
 }
