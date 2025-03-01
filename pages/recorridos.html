@@ -17,19 +17,31 @@
 <body>
 	<section class="section1 section-animada d-flex w-100 justify-content-center align-items-center flex-column"
 		style="position: relative;">
-		<div class="d-flex w-100 justify-content-center align-items-center contenedor-recorridos">
+		<div class="d-flex w-100 justify-content-center align-items-center contenedor-recorridos container">
+			
 			<nav class="d-flex justify-content-center ps-3 pe-3">
 				<ul class="d-flex list-unstyled m-0 p-0" style="gap: 20px;">
-					<li style="color: black;"><a href="/">Home</a></li>
-					<li style="color: black;">Nosotros</li>
-					<li style="color: black;">Contacto</li>
+					<li style="color: black;"><a href="/" style="text-decoration: none; color: black;">Home</a></li>
+					<li style="color: black;">
+						<button type="button" class="" style="border: none; background-color: transparent;" data-bs-toggle="modal"
+							data-bs-target="#myModal1">
+							Nosotros
+						</button>
+					</li>
+					<li style="color: black;">
+						<button type="button" class="" style="border: none; background-color: transparent;" data-bs-toggle="modal"
+							data-bs-target="#myModal2">
+							Contacto
+						</button>
+					</li>
 					<li class="d-flex align-items-center">
 						<i class="bi bi-search"></i>
 						<input class="buscador" type="text" placeholder="Buscar">
 					</li>
 				</ul>
 			</nav>
-			<img class="portada" style="margin-top: 5rem" src="../imgs/portada1.png" alt="">
+			<!-- <img class="portada" style="margin-top: 5rem" src="../imgs/portada1.png" alt=""> -->
+			 <div class="parallax parallax-recorridos"></div>
 			<div class="contenedor-texto" style="margin: 1rem; text-align: center;">
 				<h1>Recorridos Tibirita</h1>
 				<p>Los recorridos comprenden un máximo de 2h (incluye paradas para tomar fotos, videos, y hacer interpretaciones
@@ -37,6 +49,58 @@
 					previamente) con información relevante como fotografías, datos taxonómicos, y el mapa del municipio con
 					detalles de algunas especies identificadas por lugar/zona/vereda. </p>
 				
+			</div>
+		</div>
+
+		<div class="modal" id="myModal1">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Nosotros</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquid consectetur quisquam natus placeat
+						illo vitae ad veniam accusantium exercitationem! Ex expedita quidem placeat ipsam iusto enim sint eum
+						repudiandae?
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="myModal2">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Contacto</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, reprehenderit aperiam nostrum
+						atque, blanditiis autem, ipsum mollitia repellat velit aliquam rem fugit? Cumque ea vero similique nihil
+						fuga enim.
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+
+				</div>
 			</div>
 		</div>
 

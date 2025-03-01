@@ -22,9 +22,19 @@
 		<div class="d-flex w-100 justify-content-center align-items-center">
 			<nav class="d-flex justify-content-center ps-3 pe-3">
 				<ul class="d-flex list-unstyled m-0 p-0" style="gap: 20px;">
-					<li style="color: black;"><a href="/">Home</a></li>
-					<li style="color: black;">Nosotros</li>
-					<li style="color: black;">Contacto</li>
+					<li style="color: black;"><a href="/" style="text-decoration: none; color: black;">Home</a></li>
+					<li style="color: black;">
+						<button type="button" class="" style="border: none; background-color: transparent;" data-bs-toggle="modal"
+							data-bs-target="#myModal1">
+							Nosotros
+						</button>
+					</li>
+					<li style="color: black;">
+						<button type="button" class="" style="border: none; background-color: transparent;" data-bs-toggle="modal"
+							data-bs-target="#myModal2">
+							Contacto
+						</button>
+					</li>
 					<li class="d-flex align-items-center">
 						<i class="bi bi-search"></i>
 						<input class="buscador" type="text" placeholder="Buscar">
@@ -37,6 +47,57 @@
 			</div>
 		</div>
 
+		<div class="modal" id="myModal1">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Nosotros</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquid consectetur quisquam natus placeat
+						illo vitae ad veniam accusantium exercitationem! Ex expedita quidem placeat ipsam iusto enim sint eum
+						repudiandae?
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="myModal2">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Contacto</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ducimus, reprehenderit aperiam nostrum
+						atque, blanditiis autem, ipsum mollitia repellat velit aliquam rem fugit? Cumque ea vero similique nihil
+						fuga enim.
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 		<div class="contenedor2 section-animada position-absolute">
 			<div class="card card-1">
@@ -89,50 +150,50 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-    const contentMap = {
-        "recorridos": "<iframe src='./pages/recorridos.html' width='100%' height='1000px' scrolling='si'></iframe>",
-        "talleres": "<iframe src='./pages/talleres.html' width='100%' height='725px' scrolling='si'></iframe>",
-        "guias": "<iframe src='./pages/guias.html' width='100%' height='725px' scrolling='si'></iframe>",
-        "galeria": "<iframe src='./pages/galeria.html' width='100%' height='725px' scrolling='si'></iframe>",
-        "tienda": "<iframe src='./pages/tienda.html' width='100%' height='725px' scrolling='si'></iframe>",
-        "default": "Pagina no encontrada"
-    };
+			const contentMap = {
+				"recorridos": "<iframe src='./pages/recorridos.html' width='100%' height='1000px' scrolling='si'></iframe>",
+				"talleres": "<iframe src='./pages/talleres.html' width='100%' height='725px' scrolling='si'></iframe>",
+				"guias": "<iframe src='./pages/guias.html' width='100%' height='725px' scrolling='si'></iframe>",
+				"galeria": "<iframe src='./pages/galeria.html' width='100%' height='725px' scrolling='si'></iframe>",
+				"tienda": "<iframe src='./pages/tienda.html' width='100%' height='725px' scrolling='si'></iframe>",
+				"default": "Pagina no encontrada"
+			};
 
-    function switchSection(contentKey) {
-        const section1 = document.querySelector(".section1");
-        const section2 = document.querySelector(".section2");
+			function switchSection(contentKey) {
+				const section1 = document.querySelector(".section1");
+				const section2 = document.querySelector(".section2");
 
-        if (section1) {
-            section1.classList.add("salida");
-            setTimeout(() => section1.classList.add("d-none"), 700);
-        }
-        
-        if (section2) {
-            section2.classList.remove("d-none");
-            setTimeout(() => section2.classList.add("d-flex", "section-animada"), 700)
-            section2.innerHTML = contentMap[contentKey] || contentMap["default"];
-        }
-    }
+				if (section1) {
+					section1.classList.add("salida");
+					setTimeout(() => section1.classList.add("d-none"), 700);
+				}
 
-    document.querySelectorAll(".btn-card").forEach(button => {
-        button.addEventListener("click", function () {
-            const secondClass = button.classList[1];
-            if (secondClass) {
-                switchSection(secondClass);
-            }
-        });
-    });
+				if (section2) {
+					section2.classList.remove("d-none");
+					setTimeout(() => section2.classList.add("d-flex", "section-animada"), 700)
+					section2.innerHTML = contentMap[contentKey] || contentMap["default"];
+				}
+			}
 
-    function loadDynamicContent() {
-        const params = new URLSearchParams(window.location.search);
-        const page = params.get("page");
-        if (page) {
-            switchSection(page);
-        }
-    }
+			document.querySelectorAll(".btn-card").forEach(button => {
+				button.addEventListener("click", function () {
+					const secondClass = button.classList[1];
+					if (secondClass) {
+						switchSection(secondClass);
+					}
+				});
+			});
 
-    loadDynamicContent();
-});
+			function loadDynamicContent() {
+				const params = new URLSearchParams(window.location.search);
+				const page = params.get("page");
+				if (page) {
+					switchSection(page);
+				}
+			}
+
+			loadDynamicContent();
+		});
 	</script>
 </body>
 
