@@ -16,6 +16,7 @@ body {
 	width: 100vw;
 	max-width: 100%;
 	background-color: transparent;
+	font-size: 1.5rem;
 }
 
 iframe {
@@ -48,6 +49,7 @@ iframe {
 .card {
 	width: 5rem;
 	top: 100;
+	font-size: 1rem;
 	/* margin-left: 5rem; */
 }
 
@@ -353,6 +355,27 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	background-image: url('./imgs/portada5..png');
 }
 
+.boton-galeria {
+	color: #ffffff;
+	background-color: #ffa900;
+	border-radius: 20px;
+	text-decoration: underline;
+	width: 90%;
+}
+.modal {}
+.modal-animal {
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+}
+.modal-animal img {
+	width: 70%;
+	margin: 0 auto;
+}
+.modal-animal div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
 @media (min-width: 320px) {
 	.contenedor2 {
 		grid-template-columns: 1fr;
@@ -375,6 +398,9 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 
 	nav {
 		width: 95%;
+	}
+	.modal {
+		margin: 3rem
 	}
 
 }
@@ -409,6 +435,15 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	.card-recorridos {
 		grid-template-columns: 1fr 1fr;
 	}
+	.modal {
+		margin: 4rem
+	}
+}
+
+@media (min-width: 576px) {
+	.modal {
+		margin: 0rem
+	}
 }
 
 @media (min-width: 750px) {
@@ -440,6 +475,7 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	.contenedor-recorridos img,
 	.contenedor-recorridos .contenedor-texto {
 		width: 50%;
+		margin-top: 20%;
 
 	}
 
@@ -469,6 +505,9 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 
 	nav {
 		width: 65%;
+	}
+	.contenedor-texto {
+		margin-top: 10%;
 	}
 }
 

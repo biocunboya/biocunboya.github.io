@@ -103,29 +103,114 @@
 			</div>
 		</div>
 
+		<div class="modal" id="myModal3">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Aves</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body d-grid gap-2 modal-animal" style="">
+						<div>
+							<img src="../imgs/carriqui.png" alt="">
+							<span>Nombre</span>
+						</div>
+
+						<div>
+							<img src="../imgs/cuco_ardilla.png" alt="">
+							<span>Nombre</span>
+						</div>
+
+						<div>
+							<img src="../imgs/cuco_ardilla.png" alt="">
+							<span>Nombre</span>
+						</div>
+						
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="myModal4">
+			<div class="modal-dialog" style="max-width: 80%; width: 80%;">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Mariposas</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body d-grid gap-2 modal-animal">
+						<div>
+							<img src="../imgs/112.png" alt="">
+							<span>Nombre</span>
+						</div>
+
+						<div>
+							<img src="../imgs/133.png" alt="">
+							<span>Nombre</span>
+						</div>
+
+						<div>
+							<img src="../imgs/201.png" alt="">
+							<span>Nombre</span>
+						</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 		<div class="card-white" style=" ">
 
 			<div class="card-recorridos d-grid gap-5" style="width: 80%;">
 				<div class="d-flex" style="flex-direction: column;">
-					<h2>Mariposas</h2>
+					<h2>Aves</h2>
 					<div class="card-container">
 						<div class="card-galeria">
 							<div class="card-face card-face-aves front">
 								<!-- <img src="../imgs/aves.png" alt="" style="width: 100%;"> -->
 							</div>
-							<div class="card-face back">Atrás</div>
+							<div class="card-face back">
+								<button type="button" class="boton-galeria" style="border: none;" data-bs-toggle="modal"
+							data-bs-target="#myModal3">
+									Ver Galería de Aves
+						</button>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="d-flex" style="flex-direction: column;">
-					<h2>Aves</h2>
+					<h2>Mariposas</h2>
 					<div class="card-container">
 						<div class="card-galeria">
 							<div class="card-face card-face-mariposas front">
 								<!-- <img src="../imgs/aves.png" alt="" style="width: 100%;"> -->
 							</div>
-							<div class="card-face back">Atrás</div>
+							<div class="card-face back">
+								<button type="button" class="boton-galeria" style="border: none;" data-bs-toggle="modal"
+							data-bs-target="#myModal4">
+									Ver Galería de Mariposas
+						</button>
+							</div>
 						</div>
 					</div>
 				</div>
