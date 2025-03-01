@@ -218,8 +218,10 @@ nav:hover {
 	margin-top: 5rem;
 	border-radius: 20px;
 	background: #e0e0e0;
-	box-shadow: 20px 20px 60px #bebebe,
-		-20px -20px 60px #ffffff;
+	color: #ffffff;
+	background-color: #ffa900;
+background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
+
 }
 
 .card-recorridos h2 {
@@ -232,10 +234,11 @@ nav:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	/* border-bottom: 1px solid #ffffff; */
 }
 
 .card-recorridos div p:nth-child(1) {
-	border-right: 1px solid #7a7979;
+	border-right: 1px solid #ffffff;
 	padding-right: 1rem;
 }
 
@@ -330,7 +333,7 @@ nav:hover {
 	background-repeat: no-repeat;
 }
 
-.parallax-galeria{
+.parallax-galeria {
 	background-image: url('./imgs/portada1.png');
 }
 
