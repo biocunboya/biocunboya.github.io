@@ -31,8 +31,8 @@ iframe {
 	color: #ffffff;
 	z-index: 2;
 	font-size: 2rem;
-	font-family: "Tourney", serif;
-	/* font-weight: 900; */
+	font-family: "Roboto", serif;
+	font-weight: bold;
 
 
 }
@@ -128,12 +128,14 @@ nav {
 	font-size: 1rem;
 	top: 2%;
 	width: 25rem;
+	background-color: rgba(255, 228, 196, 0.5);
+	border: 3px solid rgb(196, 169, 128);
 }
 
 nav {
 	position: absolute;
 	z-index: 99;
-	background-color: bisque;
+	/* background-color: bisque; */
 	border-radius: 10px;
 	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -143,7 +145,7 @@ nav li {
 }
 
 nav:hover {
-	background-color: rgb(255, 222, 173);
+	background-color: rgb(235, 214, 184);
 	/* Color más claro */
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -222,7 +224,7 @@ nav:hover {
 	background: #e0e0e0;
 	color: #ffffff;
 	background-color: #ffa900;
-background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
+background-image: linear-gradient(62deg, #12100c 0%, #f8c92c 100%);
 
 }
 
@@ -388,7 +390,8 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	}
 
 	.title {
-		font-size: 2rem;
+		font-size: 1.5rem;
+		right: 6rem;
 	}
 
 	.contenedor-recorridos {
@@ -398,9 +401,14 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 
 	nav {
 		width: 95%;
+		/* font-size: 1.2rem; */
+		top: 1%;
 	}
 	.modal {
 		margin: 3rem
+	}
+	.modal-animal {
+		grid-template-columns: 1fr;
 	}
 
 }
@@ -417,7 +425,7 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	}
 
 	.title {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.contenedor-recorridos .card-1,
@@ -444,6 +452,10 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	.modal {
 		margin: 0rem
 	}
+	.title {
+		font-size: rem;
+		right: 1rem;
+	}
 }
 
 @media (min-width: 750px) {
@@ -459,11 +471,11 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 
 	.title {
 		font-size: 4rem;
+		right: 12rem;
 	}
 
 	nav {
 		font-size: 2rem;
-		top: 5%;
 		width: 55rem;
 	}
 
@@ -509,6 +521,9 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 	.contenedor-texto {
 		margin-top: 10%;
 	}
+	.modal-animal {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -520,5 +535,13 @@ background-image: linear-gradient(62deg, #ffa900 0%, #a70025 100%);
 
 	nav {
 		width: 40%;
+	}
+	.modal-animal {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.title {
+		font-size: 4rem;
+		right: 15rem;
 	}
 }
